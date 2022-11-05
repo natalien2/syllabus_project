@@ -1,6 +1,4 @@
 import calendar
-from enum import Enum
-
 
 MONDAY = 0
 TUESDAY = 1
@@ -51,6 +49,5 @@ def print_dates(year, start_month, end_month, start_day=0, end_day=0):
     return results
 
 
-result = print_dates(year=2022, start_month=8,
-                     end_month=12, start_day=29, end_day=12)
+result = print_dates(year=2022, start_month=8, end_month=12, start_day=29, end_day=12)
 # print(result)
