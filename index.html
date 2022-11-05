@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title: PyScript</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+        - paths:
+          - /syllubus_dates.py
+    </py-env>    
+</head>
+<body>
+These are the dates:
+<br/>
+<py-script> 
+    from syllubus_dates import print_dates
+    print_dates(year=2022, start_month=8, end_month=12, start_day=29, end_day=12)
+</py-script>
+</body>
+</html>
